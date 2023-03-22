@@ -1,0 +1,19 @@
+<body>
+<div>
+    <label>
+        <input type="text" name="text" placeholder="Write your message:" />
+    </label>
+    <label>
+        <input type="text" name="tag" placeholder="Tag">
+    </label>
+    <button type="submit"> Add </button>
+</div>
+<div>List</div>
+{{#messages}}
+    <div>
+<b>{{name}}</b>
+<span>{{text}}</span>
+<i>{{tag}}</i>
+    </div>
+{{/messages}}
+</body>
